@@ -234,11 +234,11 @@ export default function Home () {
         window.setTimeout((): void => scrollTo(SCROLL_BOTTOM_ID), 128);
         // Makes a log message.
         setLogs((oldLogs: string[]): string[] => [
-          ...oldLogs, `❌ ${{
+          ...oldLogs, `❌ ${JSON.stringify({
             message: (error as Error).message,
             cause: (error as Error).cause,
             name: (error as Error).name
-          }}`
+          }, null, 2)}`
         ]);
       }
     }
