@@ -8,8 +8,8 @@ import {defineConfig} from "vite";
 // https://vitejs.dev/config.
 export default defineConfig({
 	server: {host: "0.0.0.0", port: 5100},
+	base: "/socket_monitoring/",
   assetsInclude: ["**/*.md"],
-	base: '/',
 	build: {
     target: ["firefox78", "chrome87", "safari14", "es2020", "edge88"],
     outDir: "./production",
