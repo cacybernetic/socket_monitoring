@@ -1,0 +1,78 @@
+<!--
+	@organization Console Art Cybernetic - https://cacybernetic.github.io
+	@author: Obrymec - https://obrymec.vercel.app
+	@fileoverview: The main html structure.
+	@stack Vite + React + Typescript
+	@supported: DESKTOP, MOBILE
+	@created: 2025-11-13
+	@updated: 2025-11-24
+	@file: index.html
+	@version: 0.0.2
+-->
+
+<!--HTML structure-->
+<!doctype html>
+  <!--Global structure-->
+  <html lang = "en">
+    <!--Head-->
+    <head>
+      <!--Global title-->
+      <title>Socket Monitoring</title>
+			<!--App favicon-->
+			<link rel = "shortcut icon" ref = "/favicon.png" type = "image/png"/>
+			<link href = "/favicon.png" type = "image/png" rel = "icon"/>
+			<!--PWA-->
+			<link href = "/assets/logos/logo-96.webp" rel = "apple-touch-icon"/>
+			<meta name = "apple-mobile-web-status-bar" content = "black"/>
+			<meta name = "theme-color" content = "black"/>
+      <!--Meta configs-->
+			<meta property = "og:site_name" content = "Socket Monitoring"/>
+			<meta content = "Socket Monitoring" name = "tweetmeme-title"/>
+			<meta name = "twitter:image:alt" content = "Socket monitor."/>
+      <meta content = "Socket Monitoring" name = "twitter:title"/>
+			<meta content = "Socket Monitoring" property = "og:title"/>
+			<meta http-equiv = "X-UA-Compatible" content = "id=edge"/>
+			<meta property = "og:type" content = "article"/>
+			<meta property = "og:local" content = "en_US"/>
+			<meta
+				content = "https://cacybernetic.github.io/socket_monitoring/assets/render/render_1.webp"
+				name = "twitter:image"
+			/>
+			<meta
+				content = "https://cacybernetic.github.io/socket_monitoring/assets/render/render_1.webp"
+				property = "og:image"
+			/>
+			<meta
+				content = "Monitors and visualizes live socket connections and data flow."
+				name = "twitter:description"
+			/>
+			<meta
+        content = "Monitors and visualizes live socket connections and data flow."
+				property = "og:description"
+			/>
+			<meta
+				content = "Monitors and visualizes live socket connections and data flow."
+				name = "description"
+			/>
+			<meta
+				content = "https://cacybernetic.github.io/socket_monitoring/"
+				name = "twitter:card"
+			/>
+			<meta
+				content = "https://cacybernetic.github.io/socket_monitoring/"
+				property = "og:url"
+			/>
+      <meta
+        content = "width=device-width, initial-scale=1.0"
+        charset = "utf-8"
+        name = "viewport"
+      />
+    </head>
+    <!--Global root-->
+    <body>
+      <!--Graphical interface-->
+      <div id = "root"></div>
+      <!--Controller-->
+      <script src = "/src/main.tsx" type = "module"></script>
+    </body>
+  </html>
